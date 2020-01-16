@@ -1,0 +1,466 @@
+/* whole page */
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+ }
+
+html, body{
+  height: 100%;
+  
+}
+
+
+/* contorl body of page */
+.main{
+  font-size:25px;
+  /* background-color: #dacec6; */ 
+  background-image: linear-gradient(#9e1a1a,#000, #4d80e4);
+  color: white !important;
+}
+.mainmenu{
+/*  background-image: linear-gradient(#000, #4d80e4);*/
+
+}
+.rrmainbeer{
+  background-image: linear-gradient(#9e1a1a,#000, #4d80e4) !important; 
+}
+
+/*.mainabout{
+  color: white;
+  background-color: black;
+}*/
+
+.mainabout p{
+  font-size: 20px;
+}
+
+.background-front{
+  background-image: url("Background/IMG_88551.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.link{
+    background-color: #2c2f33;
+    overflow: hidden;
+}
+.link a{
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+
+}
+.link a:hover{
+    background-color: gray ;
+    color: white;
+}
+.mySlides {display: none;}
+
+.mySlides img{
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  border: 20px groove black;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 15px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.9999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Caption text */
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  font-weight: bold;
+  text-align: left ;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff1e8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+}
+
+.activedot {
+  background-color: #fff1e8;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.catering{
+  text-align:center;
+}
+h1, h2, h3, h4, h5{
+  font-family: Castellar;
+  text-align: center;
+  text-shadow: 2px 2px 5px black ;
+}
+h1{
+  font-size: 35px;
+ 
+}
+h2{
+  font-size: 45px;
+}
+h3{
+  font-size: 25px;
+}
+
+h6{
+  font-size: 10px;
+  text-decoration:none;
+}
+
+.boader{
+  margin: 10px auto 10px auto;
+  width: 85%;
+  border: 20px ridge #000000;
+}
+
+.Home{
+  font-size: 20px;
+}
+
+.upcoming{
+  flex: 50%;
+  padding: 20px;
+}
+.right{
+  float: right;
+  margin-left: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 73%;
+} 
+
+/*games */
+/* The grid: Four equal columns that floats next to each other */
+.gamecolumn {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.gamecolumn img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.gamecolumn img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.gamerow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.gamecontainer {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/*Menu*/
+.tab, .tab2, .tab3 {
+  overflow: hidden;
+  background-color: black;
+  /*background-color: black;
+  background-image: url("Background/gray.jpg");*/ 
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button{
+  color: white;
+  font-size: 20px;
+  background-color: inherit;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  width:25%;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+ .tab2 button{
+  color: white;
+  font-size: 20px; 
+  background-color: inherit;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  width:20%;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab3 button{
+  color: white;
+  font-size: 20px; 
+  background-color: inherit;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  width:33%;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover, .tab2 button:hover, .tab3 button:hover {
+  color:gold;
+}
+
+/* Create an active/current tablink class */
+.tab button.active, .tab2 button.active, .tab3 button.active {
+  color:gold;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  text-align: center;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.can{
+  font-size: 35px;
+  color: #Efe9db;
+}
+.alt{
+  font-size: 100px;
+}
+
+.abouttitle{
+  background-image: url("eventbackground/lights1.jpg");
+  color:white;
+}
+.gototop{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #dfcec3;
+  background: transparent !important;
+  bottom:40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 45px;
+}
+
+#myBtn, #Chips, #Mushrooms{
+  font-size: 30px;
+  font-weight: bold;
+  background-color: unset;
+  border: none;
+  width:100%;
+  color:black;
+  font-family: Castellar;
+  text-align: center;
+  text-shadow: 2px 2px 5px black
+}
+#myBtn:hover, #Chips:hover, #Mushrooms:hover{
+  color:white;
+}
+/* The Modal (background) */
+.modal, .chips, .mushrooms {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content, .Homeade-content, .mushroom-content {
+  position: relative;
+  background-color: #dacec6;
+  margin: auto;
+  padding: 0;
+  border: 10px solid #888;
+  width: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close, .close1, .close2 {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus, .close1:hover, .close1:focus, .close2:hover, .close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header, .Homemade-header, .mushroom-header{
+  padding: 2px 16px;
+  background-color: #dacec6;
+  color: black;
+}
+
+.modal-body, .Homemade-body, .mushroom-body {
+  margin: 2px 16px;
+}
+
+.modal-footer, .Homemade-footer, .mushroom-footer {
+  padding: 20px 16px ;
+  background-color: #dacec6;
+  color: black;
+}

@@ -1,0 +1,540 @@
+<html> 
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/body.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/column.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">	
+		<html lang="en">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Food Menu</title>
+		<div style="background-color:dacec6;">	
+			<p><img style=" margin-left:10px; width:11%; float: left;"src="img/Picture2.png">
+			<br><h2>Bannerman's Sports Grill</h2>
+			<h3 style="color:blue;">Great Food, Cold Drinks, Good Time!</h3><br>			
+		</div>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" >Home</a>
+			<a href="Menu.html" class="active1">Menu</a>
+			<a href="Beer.html">Beer Menu</a>
+			<a href="Catering.html">Catering</a>
+			<a href="Event.html">Events</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="about.html">About</a>
+			<a href="javascript:void(0);" class="icon" onclick="Topnav()">&#9776;</a>
+		</div> 
+	</head>
+	<body>
+		<div class="main mainmenu" ><br>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="img/WaffleFriesLoaded.JPG" style="width:100%; height: 50%;">
+					<div class="text">WaffleFries Loaded</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Homemade.JPG" style="width:100%; height:50%; ">
+					<div  style="color:white;" class="text">Homemade Chips</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Onion.JPG" style="width:100%; height:50%;">
+					<div class="text">Onion Rings</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Mushrooms.JPG" style="width:100%; height:50%;">
+					<div class="text">Mushrooms</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Wrap.JPG" style="width:100%; height:50%;">
+					<div class="text">Wrap</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Black&Blue.JPG" style="width:100%; height:50%;">
+					<div style="color:white; text-align: right;"class="text">Black & Blue Burger</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/BLT.JPG" style="width:100%; height:50%;">
+					<div Style="text-align: right; color:white;"class="text">BLT</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/ChixTenders.JPG" style="width:100%; height:50%;">
+					<div class="text">Chicken Tenders</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Wings.JPG" style="width:100%; height:50%;">
+					<div class="text">Wings</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Wings(2).jpg" style="width:100%; height:50%;">
+					<div class="text">Wings</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/SausagePizza.JPG" style="width:100%; height:50%;">
+					<div style="color:white;" class="text">Sausage pizza</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="img/Sunday.JPG" style="width:100%; height:50%;">
+					<div class="text">Sundae</div>
+				</div>
+				</div>
+				<br>
+				<div style="text-align:center; display: none;">
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+				<div class="tab">
+					<button class="tablinks" onclick="openFood(event, 'Specials')" id="defaultOpen">Specials</button>						
+					<button class="tablinks" onclick="openFood(event, 'Starters/Sides')">Startes/Sides</button>
+					<button class="tablinks" onclick="openFood(event, 'Salads/Wraps')">Salads/Wraps</button>
+					<button class="tablinks" onclick="openFood(event, 'Burgers/Sandwhiches')" >Buger/Sandwhiches</button>
+				</div>	
+				<div class="tab2">				
+					<button class="tablinks" onclick="openFood(event, 'Chicken/Wings')">Chicken/Wings</button>
+					<button class="tablinks" onclick="openFood(event, 'Pizza/Ribs')">Pizza/Ribs</button>
+					<button class="tablinks" onclick="openFood(event, 'Seafood')">Seafood</button>						
+					<button class="tablinks" onclick="openFood(event, 'Kids Menu')">Kids Menu</button>
+					<button class="tablinks" onclick="openFood(event, 'Dessert')">Dessert/Beverages</button>	
+				</div>
+				
+
+				<div id="Specials" class="tabcontent">
+					<b>Weekday Lunch Specials
+					<br>Monday through Friday</b> – From 11am to 2pm!<br>
+					$2.49 Burger or Mini-Gyro with Chips (with beverage purchase)
+					<br><br><b>Wednesday: </b>
+					<p>Bone-in wings for $6.00</p><br>
+					<b>Thursday: </b>1/2 <p> Price Pizza</p><br>
+					<b>Friday:</b><p> Haddock for $8.99</p><br>
+					<b>Sunday:</b><p> $6.99 Bannerman’s Famous Broasted Chicken
+							<br>(Chicken 3 piece Dinner with Broasted Potatoes & Cole Slaw)</p>
+					<br>
+				</div>
+				<div id="Starters/Sides" class="tabcontent">
+					<div class="row">
+						<div class="columnleft">
+							<h4>Nachos Loaded- $8.99</h4> <!-- Nachos Loaded Price-->
+							<b>Big enough to share!</b><br>Chips loaded with chili, cheese, lettuce, tomatoes,
+							<br>and jalapenos - Servied with sour cream and salsa.<br> 
+					
+							<br> Add Chicken - $3.00 <!-- Chicken Price (two spots)-->
+
+							<br> Add a side of Guacamole - $1.50<!-- Guacamola Price--> 
+
+							<br><br><h4>BBQ Chicken Nachos - $8.99</h4><!--BBQ Chicken Nachos Price-->
+							Chips loaded with Chicken, Pulled Pork,
+							cheese, lettuce,<br> tomatoes, and jalapenos - Servied with sour cream <br><br>
+
+							<h4>Seasoned Fries - $6.99 </h4><!--Seasoned Fries-->
+							Served with chedder cheese and Cajun seasoning<br><br>
+							
+							<!-- Trigger/Open The Modal -->
+							<button id="myBtn">Waffle Fries Loaded- $9.99</button>
+
+							<!-- The Modal -->
+							<div id="myModal" class="modal">
+
+							<!-- Modal content -->
+							<div class="modal-content">
+								<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2>Waffle Fries Loaded</h2>
+								</div>
+								<div class="modal-body">
+								<img src="img/WaffleFriesLoaded.JPG" style="max-width:350px;">
+								</div>
+								<div class="modal-footer">
+								<h3>$9.99</h3>
+								</div>
+							</div>
+							</div>						
+							<b>Also big enough to share!</b><br>
+							Our signature waffle fires loaded with chili, cheese,<br>tomatoes, and jalapenos<br><br>
+							
+							Add Chicken - $3.00<br><br><!--Chicken Price-->
+
+							<!--Homemade potato chips price-->
+							<!-- Trigger/Open The Modal -->
+							<button id="Chips">Homemade Potato Chips- $5.99</button>
+
+							<!-- The Modal -->
+							<div id="Homemade" class="chips">
+
+							<!-- Modal content -->
+							<div class="Homeade-content">
+								<div class="Homemade-header">
+								<span class="close1">&times;</span>
+								<h3>Homemade<br> Potato <br> Chips</h3>
+								</div>
+								<div class="Homemade-body">
+								<img src="img/Homemade.JPG" style="max-width:100%;">
+								</div>
+								<div class="Homemade-footer">
+								<h3>$5.99</h3>
+								</div>
+							</div>
+							</div>
+							Topped with Cajun seasiong, southwestern ranch dressing<br><br>
+
+							<h4>Mozzarella Sticks- $4.99</h4><!--Mozzarella Sticks price-->
+							Served with marinara sauce<br><br>
+					
+							<h4>Wisconsin Cheese Curds - $4.99 </h4><!--Cheese Curds Price-->
+							Served with marinara sauce<br><br>
+
+							<h4>Beer Battered O-Ring - $6.50</h4><!--Rings Price-->
+							Served with southwestern ranch dressing<br><br>
+
+							<!--Mushrooms Price-->
+							<!-- Trigger/Open The Modal -->
+							<button id="Mushrooms">Breaded Mushrooms -$4.99</button>
+
+							<!-- The Modal -->
+							<div id="Mush" class="mushrooms">
+
+							<!-- Modal content -->
+							<div class="mushroom-content">
+								<div class="mushroom-header">
+								<span class="close2">&times;</span>
+								<h2>Breaded Mushrooms</h2>
+								</div>
+								<div class="mushroom-body">
+								<img src="img/Mushrooms.JPG" style="max-width:350px;">
+								</div>
+								<div class="mushroom-footer">
+								<h3>$4.99</h3>
+								</div>
+							</div>
+							</div>
+
+							Served with ranch dressing<br><br>
+
+							<h4>Mac & Cheese bites - $6.99</h4><!--Mac & Chz Price-->
+							Served with marinara<br><br>
+						</div>
+						<div class="columnright">
+							<h4>Southwestern Egg Rolls - $7.99</h4><!--Egg Rolls Price-->
+							<b>You'll never go back to regular egg rolls!</b><br>
+							Served with Avocado ranch<br><br> 
+	
+							<h4>Potato Skins - $7.99</h4><!--Potato Skins Price-->
+							Loaded with cheese and bacon!<br> Served with sour cream<br><br>
+							
+							<h4>Spinach Artichoke Dip -$ 7.99</h4><!--Spinach Artichoke Price-->
+							Served with pita chips<br><br>
+		
+							<h4>Basket of Regular Fries - $4.99</h4><!--Reqular Fries Price-->
+							Substitute waffle fries for $.50<!--waffle fries price--><br> Served with chesse<br><br>
+		
+							<h4>Huge Pretzel</b>- $7.99</h4><!--Pretzel Price-->
+							Served with cheese & Spicy mustard<br><br>
+		
+							<h4>Tavern Mix Basket -$ 7.25</h4><!--Tavern Price-->
+							Cream cheese Jalaoeno snappers, Battered Mozzarella Sticks
+							<br>Battered chedder snaps, battered onion rings,<br>
+							Battered Mushrooms, and Waffle cut fries<br><br>
+		
+							<h4>Cheese Quesadilla - $6.99</h4><!--Quesadilla Price-->
+							A blend of cheese in a tortilla shell.
+							<br>Served with sour cream and salsa on the side.
+							<br>Get it Spicy<br><br> Add Chicken - $6.99<br><br>
+		
+							<h2>A Little Warm Up!</h2>
+							<h4>Game Day Chili - $3.99</h4><!--Chili Price-->
+							Get it loaded with Cheese and onoin - $1.00 extra<!--extra Price-->
+		
+							<br><br><h4>Soup (Seasonal) - $3.29</h4><!--Soup Price-->
+								
+							<p id = "soup"></p><br>
+							<p id = "next"></p>
+		
+							<h2>Sides</h2>
+							<b>Homemade Coleslaw, Vegetabels, Side salad,<br> Baked Beans,
+						</div>
+					</div>
+				</div>
+				<div id="Salads/Wraps" class="tabcontent">
+					<div class="row">
+						<div class="columnleft">
+							<h2>Salads</h2>
+							<b>Our Salads are big enough to share!</b><br><br>
+							<h4>Cobb Salad - $9.99</h4><!--Price for Cobb-->
+							Mixed Greens, diced tomatos, Avocado,<br>bacon bits, crumbled blue cheese,<br> bolied egg, and cucumber
+							
+							<br><br><h4>Bannerman's Breaded <br>Chicken Salad - $8.99</h4><!--chix salad price-->
+							Lettuce mix, tomato, cucumber,<br>chedder cheese, and breaded Chicken
+
+							<br><br><h4>Caesar Salad - $5.99</h4><!--Caesar Price-->
+							<u>With Chicken</u>- $8.99<!--Caesar w/chix Price--><br>
+							Crisp romaine lettuce<br> tossed in Caesar dressing with shredded<br> parmesan cheese and croutons
+				
+							<br><br><h4>Caesar and Garden Side Salads - $3.75</h4> <!--Side Salads Price-->
+						</div>
+						<div class="columnright">
+							<h2>Wraps</h2>
+							<h4>Bannerman's Wraps - $8.99</h4><!--Warp Price-->
+							All Warps served with your choice of two sides
+				
+							<br><br><h4>Caesar Warp</h4>
+							Caesar salad stuffed into a warm<br>toasted tortilla shell<br>Your choice of plain or spicy Chicken
+
+							<br><br><h4>Barbecue Chicken Wrap</h4>
+							Stuffed with BBQ chicken,<br> shredded lettuce and tomatoes
+
+							<br><br><h4>Buffalo Chicken Wrap</h4>
+							Stuffed with grilled ot breaded chicken,<br> buffalo sauce, shredded lettuce, tomato, and ranch
+
+							<br><br><b>Dressing Selections</b><br>
+							Ranch, Blue Cheese, Honey Mustard, French,<br>Light Italian, 1000 Island, Raspberry Vinaigrette,<br>Balsamic Vinaigrette, Creamy Garlic
+						</div> 
+					</div>
+				</div> 
+				<div id="Burgers/Sandwhiches" class="tabcontent">
+					<div class="row">
+						<div  class="columnleft">
+							<h2>Burger's</h2>Garnished with lettuce, tomato, onion, and a pickle spear
+							<br>Choose of American, Cheddar, Mozzarella or Pepperjack chesse - $.75
+							<br> Add bacon - $.75<b><br>Substitute a Boca Burger</b>
+							<br><br><h4>Hamburger - $8.99</h4><!--basic Price-->
+							
+							<br><h4>Gyro Burger -$9.99</h4><!--Gyro Price-->
+							Gyro meat on top of a single burger
+		
+							<br><br><h4>Fire Burger -$9.99</h4><!--Fire Price-->
+							If you like it HOT, this one is for you.<br>Have an extra drink handy!
+				
+							<br><br><h4>Smokehouse Burger - $9.99</h4><!--Smokehouse Price-->
+							Served with B.B.Q sauce topped with bacon and chedder
+							
+							<br><br><h4>Black and Blue Burger - $9.99</h4><!--Black and blue Price-->
+							A cajun seasoned burger, topped with melted blue cheese sauce
+				
+							<br><br><h4>Pizza Burger - $9.99</h4><!--Pizza Price-->
+							Topped with our special sauce and mozzarella cheese
+			
+							<br><br><h4>Monster Burger - $ 12.99</h4><!--Monster Price-->
+							<b>3 Patties!!!</b><br>topped with bacon, chedder cheese and two onion rings 
+							
+							<br><br><h4>Guacamole Burger - $9.99</h4><!--Guca Price-->
+							Pepper jack, guacamole and bacon
+
+							<br><br><h2>Flat Bread Sandwiches - $8.99</h2> <!--Flat Bread Price-->
+		
+							<br><h4>Chicken Fajita</h4>
+							Chicken, grilled green peppers,<br> and Mozzarell cheese
+				
+							<br><br><h4>Italian Beef</h4>
+							Mozzarella cheese, sweet or hot peppers 
+						</div>
+						<div class="columnright">								
+							<h2>Sandwiches</h2>
+							Served on fresh baked French bread,<br> your choice of two sides,<br> and your choice of hot or sweet peppers.<br> add any cheese -$.75
+								
+							<br><br><h4>Italian Beef - $9.50</h4><!--Italian beef Price-->
+							Tender, thin-sliced real italian beef, Au-jus...<br><b><i>what else is there to say?</i></b>
+								
+							<br><br><h4>Italian Sausage - $9.50</h4><!--Italian sausage Price-->
+							The finest sausage around, with a mild kick, served with our own beef gravy
+							<br>Served with marinara sauce on request 
+				
+							<br><br><h4>Italian Meatball - $9.50</h4><!--Italian Meatball Price-->
+							Three Large, perfectly seasoned meatballs,<br>served wit our own beef gravy
+							<br>Served with marinara sauce on request 
+				
+							<br><br><h4>Beef & Sausage Combo - $9.50</h4><!--Combo Price-->
+				
+							<br><br><h4>Steak Sandwich - $ 9.99</h4><!--Steak Price-->
+							Prime rib eye steak, broiled medium well,<br> topped with caramelized onions
+						
+							<br><br><h4>Gyros On pita - $8.99</h4><!--Gyro Price-->
+							With onion, tomato, and gyro sauce
+							<br>Add extra sauce – $.50
+				
+							<br><br><h4>Chicken Gyros on Pita – $9.29</h4><!--Chicken Gyro Price-->
+							With onions, tomato and<br>served with a honey 
+							mustard sauce or gyros sauce
+							<br>Add extra sauce – $.50
+				
+							<br><br><h4>Italian SubI - $8.99</h4><!--Italian sub Price-->
+							Roast beef, pepperoni, onions, lettuce, tomato,<br> mayo, italian seasoning, and italian dressing
+
+							<br><br><h4>BLT -$7.99</h4>
+							
+							<br><h4>Grilled Cheese - $6.99</h4>
+							Served with Fries
+						</div>
+					</div>
+				</div> 
+				<div id="Chicken/Wings" class="tabcontent">
+					<div class="row">
+						<div class="columnleft">
+							<h2></h2>
+							<h4>Broasted Chicken Dinner - $9.99</h4><!--Broasted Price-->
+							<br>Three Pieces(Breast, Thigh, wing or leg)
+							<br>Served with your choice of two sides <br>or 1 side and broasted potatoes
+		
+							<br><br><h4>Broasted Chicken to Go</h4>
+							<br> 10 Piece Box $11.99<!--10 piece Price-->
+							<br> 12 Piece Box $13.99<!--12 piece Price-->
+							<br> 16 Piece Box $17.99<!--16 piece Price-->
+							<br> 20 Piece Box $21.99<!--20 piece Price-->
+			
+							<br><br><h4>Pint of Coleslaw - $2.50</h4><!--Coleslaw Price-->
+							<br><h4>8 Poece Broasted Potatos - $5.99</h4><!--Broasted Potatos-->
+						
+							<br><h4>Bone-in Wings</h4>
+							12 - $12.99 (2 Choices of sauce)
+							<br>18 - $17.99 (3 Choices of sauce)
+							<br>24 - $19.99 (4 choice of sauce)<br>
+						</div>
+						<div class="columnright">
+							<p>Bone-in Wing Wednesday!</p>
+							Sets of 10 Wings for $6.00 per set
+							
+							<br><br><h4>Bonless Wings 12 - $9.99</h4><!--Bonless Wings Price-->
+							2 Sauce and 1 dressing
+							<br>Served with celery
+	
+							<br><h4>Chicken Tenders Basket</h4>
+							<u>Small(6-7)</u>-$9.99<!--Small Price--><br> with 1 choice of sauce & dressing 
+							<br><u>Large(12-13)</u>-$15.99<!--Large Price--><br> 2 choices of sauces & 1 dressing 
+						
+							<br><br><h4>Gluten Free Chicken Tenders(6) -$7.99</h4><!--Gluten tenders Price-->
+							<b>Sauces</b><br>Honey Mustard, Sweet BBQ, Garlic Parmesan, Samurai Oriental,<br> Spicy Garilc,Mild, Hot, Extra Hot, Blazing Hot Fire
+							<br> Add exta sauce, dressing, celery for $.50
+							<br><br>
+						</div>
+					</div>
+				</div> 
+				<div id="Pizza/Ribs" class="tabcontent">
+					<div class="row">
+						<div class="columnleft">
+							<h3>Pizza </h3>
+							<h3>10"</h3>
+							Cheese $9.49
+							<br>Sausage $11.24
+							<br>Pepperoni $11.24
+							<br>Italian Beef $13.24
+							<br>with beef gravy, sweet or hot peppers – <br>no pizza sauce
+							<br>BBQ Chicken $13.24
+							<br>Buffalo Ranch with bacon $13.24 
+							<br><br><h3>16”</h3>
+							Cheese $15.49
+							<br>Sausage $17.24
+							<br>Pepperoni $17.24
+							<br>Italian Beef $19.24
+							<br>with beef gravy, sweet or hot peppers –<br> no pizza sauce<br>
+						</div>
+						<div class="columnright">
+							BBQ Chicken Pizza $19.24
+							<br>Buffalo Ranch with bacon Pizza $19.24
+							<br>10” Gluten Free Cheese Pizza $10.99
+							<br>Additional ingredients – Add $2 per ingredient
+							Mushrooms  •  Onions  •  Green Olives  •  Sausage  •  Pepperoni  •  Bacon  •  Green Peppers  •  Hot Peppers
+							<br>"1/2 Price Pizza on Thursdays"
+							<h3>RIBS – WE ARE FAMOUS FOR THESE TOO!</h3>
+							<br>Finger Licking! Our ribs don’t fall off the bone, <br>a true rib eater eats them off the bon
+							<br>½ Slab – $14.99
+							<br>Full Slab – $19.99
+							<br>Served with your choice of two sides
+							<br>Rib Combos
+							<br>½ Slab Ribs – 2 Pieces Chicken – $17.99
+							<br>½ Slab Ribs – 4 Shrimp – $18.99
+							<br>Served with your choice of two sides<br>
+						</div>
+					</div>
+				</div>
+				<div id="Seafood" class="tabcontent">
+					<div class="row">
+						<div class="columnleft">
+							<br><h3>Shrimp (Gaint One's)</h3>Served with your choice of two sides
+							<br><h4>Plain Shrimp</h4>
+							<b>1/2 pound</b>- $12.99
+							<br><b>1 pound</b>- $18.99
+							<br><br><h4>Buffalo Shrimp - Shrimp with a kick</h4>
+							<b>1/2 pound</b>- $12.99
+							<br><b>1 pound</b>- $18.99
+						</div>
+						<div class="columnright">
+							Friday Haddock- $ 8.99
+							<br><b>Now available everyday!</b>
+							<br><br><h4>6 pieces of Haddock</h4>
+							Served with your choice of two sides 
+							<br><br><h4>Fish Sandwhiche - $8.99</h4>
+							<br><b>A generous portion of Cod deep fried</b>
+							<br>Garnished with lettuce, tomato, and mayo
+							<br>Served with your choice of two sides
+							<br>Add Cheese $.75
+							<br><br>
+						</div>
+					</div> 
+				</div>
+				<div id="Kids Menu" class="tabcontent">
+					<b>Ages 2 - 12 Years</b>
+					<br><b>$6.75</b>
+					<br> All Rookie Meals come with<br> regular fries, choice of soft drink<br> and small Sundae
+					<br> Substitute waffle fries for $.50
+					<p style="font-weight: bold "><br>Chicken Tenders
+					<br><br>Hamburger / Cheeseburger
+					<br><br>Corn Dog
+					<br><br>Mini Cheese Pita Pizza
+					<br><br>Mac and Cheese<br><br></p>
+				</div> 
+				<div id="Dessert" class="tabcontent">
+					<div class="row">
+						<div class="columnleft">
+							<br><h4>Fresh Baked Hot Chocolate Chip Cookie - $6.99</h4>
+							Served with vanilla ice cream and chocolate syrup
+							<br><b>It's, its fresh, IT IS GOOD! Yum!</b>
+							<br><br><h4>Ice Cream Sundae - $3.99</h4>
+							Served with chocolate syrup, whipped cream and cherry
+							<br><br><h4>Homemade Milk Shakes - $4.99</h4>
+							Chocolate or Vanilla
+						</div>
+						<div class="columnright">
+							<h4>Beverages - $1.99</h4>
+							Pepsi Products, Iced tea, Raspberry Iced Tea, Lemonade,<br> Canberry Juice, Orange Juice, Milk, Hot Chocolate, Coffee  
+							<br>Free refills<br> 
+							<h4>Red Bull / Sugar free Red Bull - $2.99 per can</h4>
+							<b>Flavors:</b> Blueberry, Cranberry, Tropical, or Orange
+							<br><br><b>Note:</b><br>In the interest of conservation, water is by request,<br> please let your server know if you would like  a glss
+							<br>Thank you for your help in this matter
+							<br><br>
+						</div>
+					</div> 
+				</div> 
+			</div>
+			<footer id="footer">
+				<div class="row">
+					<div class="column">
+						<p>Monday & Tuesday: <br>11am - 11pm<br>Wednesday & Thursday:<br>11am - 12am<br>Friday & Saturday:<br>11am - 1am<br>Sunday:<br>11am - 11pm<br></p>
+						<p><a href="mailto: bannermansbartlett@comcast.net">Email: bannermansbartlett@comcast.net</a></p>
+						<p>Phone Number: (630)947-6841</p>
+						<p><a href ="https://goo.gl/maps/zbJxMj2LVekULFh48">Address: 858 S. Route 59 Bartlett, IL 60103</a></p>
+						<p>
+						<a href="https://www.facebook.com/matt.janczak.9"> <img src="Social Media Icons/PNG/Circle Color/Facebook.png" alt="Bannerman's facebook" style="width: 42px; height:42px; border: 0;"></img></a>
+						<a href=""> <img src="Social Media Icons/PNG/Circle Color/Twitter.png" alt="Bannerman's Twitter" style="width: 42px;" ></img></a>
+						<a href=""><img src="Social Media Icons/PNG/Circle Color/Yelp.png" alt="Bannerman's Yelp" style="width: 42px;" ></img></a> 
+						</p>
+						<a herf="MatthewJanczak.com">Created by Matthew Janczak</a>	
+					</div>
+					<div class="column">
+						<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.1221474698545!2d-88.21100748506806!3d41.97618716725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f00d80079fc73%3A0xb97d631c6e587f80!2sBannerman&#39;s+Sports+Grill!5e0!3m2!1sen!2sus!4v1565588494333!5m2!1sen!2sus" width="250" height="235" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+					</div>
+				</div>
+			</footer>
+			<a class="gototop" href="#"><i class="fas fa-arrow-up"></i></a>
+		</body>
+	<script src="js/navbvar.js"></script>
+</html>

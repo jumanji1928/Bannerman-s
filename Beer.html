@@ -1,0 +1,115 @@
+<html> 
+	<head>	
+		<link rel="stylesheet" type="text/css" href="css/body.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/column.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">		
+		<html lang="en">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Beer Menu</title>
+		<div>	
+			<p><img style=" margin-left:10px; width:11%; float: left;"src="img/Picture2.png">
+			<br><h2>Bannerman's Sports Grill</h2>
+			<h3 style="color:blue;">Great Food, Cold Drinks, Good Time!</h3><br>			
+		</div>	
+		<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+                <a href="Menu.html" >Menu</a>
+                <a href="Beer.html" class="active1">Beer Menu</a>
+                <a href="Catering.html">Catering</a>
+				<a href="Event.html">Events</a>	
+				<a href="gallery.html">Gallery</a>
+				<a href="about.html">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="Topnav()">&#9776;</a>
+			</div> 
+	</head>
+	<body>
+		<div class="main">
+			<br><div class="row mainbeer">
+				<div class="columnleft">
+					<center><p><b>Monday:</b><br>
+						$3.75 23oz Domestic Drafts (23oz)	
+						<br>$4.00 Absolut Mixers
+						<br>½ Price Wine
+						<br><b>Tuesday:</b>
+						<br>$2.75 Domestic Bottles
+						<br>$3.75 Craft Drafts (16oz)
+						<br>$4.00 Craft Cans and Bottles
+						<br>$4.00 Jose Cuervo	
+						<br><b>Wednesday:</b>
+						<br>$3.75 Drafts (23oz)
+						<br>$4.00 Jack – Jameson – Jim Beam
+						<br>$3.00 Import Bottles
+						<br><b>Thursday:</b>
+						<br>$2.50 Drafts – Domestic & Import (16oz)
+						<br>$4.50 Craft Drafts (16oz)
+						<br>$3.00 All Well Drinks
+					</p></center>
+				</div>
+				<div class="columnright">
+					<center><p>
+						<b>Friday: </b>
+						<br>$12 Domestic Buckets
+						<br>$4.00 Drafts – Dos xx, Modelo, Blue Moon, Heineken
+						<br>$4.00 Bacardi & Captain
+						<br><b>Saturday: </b>
+						<br>$3.00 24oz Cans – Miller Lite, Coors Lite, MGD
+						<br>$4.00 Titos
+						<br>$4.00 All Bombs
+						<br><b>Sunday: </b>
+						<br>$3.00 24oz Cans – Miller Lite, Coors Lite, MGD
+						<br>$3.00 Mimosas
+						<br>$5.00 Bloody Mary’s
+						<br>½  Price Wine<br><br>
+					</p></center>
+				</div>
+			</div> 
+			<div id="menu-container"></div>
+			<script type="text/javascript">
+  			!function(e,n){var t=document.createElement("script"),a=document.getElementsByTagName("script")[0];t.async=1,a.parentNode.insertBefore(t,a),t.onload=t.onreadystatechange=function(e,a){(a||!t.readyState||/loaded|complete/.test(t.readyState))&&(t.onload=t.onreadystatechange=null,t=void 0,a||n&&n())},t.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("menu-container",28101,107978)});
+			</script>
+		</div>
+			
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+			content.style.maxHeight = null;
+			} else {
+			 content.style.maxHeight = content.scrollHeight + "px";
+			} 
+			});
+			}
+</script>						
+		</div>
+	<footer id="footer">
+		<div class="row">
+			<div class="column">
+			<p>Monday & Tuesday: <br>11am - 11pm<br>Wednesday & Thursday:<br>11am - 12am<br>Friday & Saturday:<br>11am - 1am<br>Sunday:<br>11am - 11pm<br></p>
+				<p><a href="mailto: bannermansbartlett@comcast.net">Email: bannermansbartlett@comcast.net</a></p>
+				<p>Phone Number: (630)947-6841</p>
+				<p><a href ="https://goo.gl/maps/zbJxMj2LVekULFh48">Address: 858 S. Route 59 Bartlett, IL 60103</a></p>
+				<p>
+				<a href="https://www.facebook.com/matt.janczak.9"> <img src="Social Media Icons/PNG/Circle Color/Facebook.png" alt="Bannerman's facebook" style="width: 42px; height:42px; border: 0;"></img></a>
+				<a href=""> <img src="Social Media Icons/PNG/Circle Color/Twitter.png" alt="Bannerman's Twitter" style="width: 42px;" ></img></a>
+				<a href=""><img src="Social Media Icons/PNG/Circle Color/Yelp.png" alt="Bannerman's Yelp" style="width: 42px;" ></img></a> 
+			</p>
+			<a herf="MatthewJanczak.com">Created by Matthew Janczak</a>		
+			</div>
+			<div class="column">
+			<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.1221474698545!2d-88.21100748506806!3d41.97618716725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f00d80079fc73%3A0xb97d631c6e587f80!2sBannerman&#39;s+Sports+Grill!5e0!3m2!1sen!2sus!4v1565588494333!5m2!1sen!2sus" width="250" height="235" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+			</div>
+		</div>
+	</footer>
+	<a class="gototop" href="#"><i class="fas fa-arrow-up"></i></a>
+</body>	
+<script src="js/navbvar.js"></script>
+</html>

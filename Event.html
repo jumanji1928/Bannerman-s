@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/body.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/column.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">	
+	<html lang="en">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Events</title>
+</style>
+<div>	
+	<p><img style=" margin-left:10px; width:11%; float: left;"src="img/Picture2.png">
+	<br><h2>Bannerman's Sports Grill</h2>
+	<h3 style="color:blue;">Great Food, Cold Drinks, Good Time!</h3><br>			
+</div>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" >Home</a>
+		<a href="Menu.html" >Menu</a>
+		<a href="Beer.html">Beer Menu</a>
+		<a href="Catering.html">Catering</a>
+		<a href="Event.html" class="active1">Events</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="about.html">About</a>
+		<a href="javascript:void(0);" class="icon" onclick="Topnav()">&#9776;</a>
+	</div> 
+	<div class="main" style="background-color: maroon;">
+		<br><h1 class="abouttitle">Check out what's Happening Next... </h1>
+		<br><h3 id="Month" style="color: white;"></h3><br>
+			<div class="row">
+				<div class="column3">
+					<a  href="https://www.facebook.com/events/2392429177686755/" target="_blank">
+						<img  src="img/Events/hi_Infidelity.png" class="image1" alt="event poster 1" style= "width:100%;">  
+					</a><br>
+				</div>
+				<div class="column3">
+					<a href="https://www.facebook.com/events/561951367918373/">
+						<img  src="img/Events/Sip&PaintWinter.png" class="image1" alt="event poster 1" style= width:100% >  
+					</a><br>
+				</div>
+				<div class="column3">
+					<a  href="https://www.facebook.com/events/490788588206532/">
+						<img  src="img/Events/Dixie_Crush.png" class="image1" alt="event poster 1" style= width:100% >  
+					</a><br>
+				</div>
+				<!--<div class="column4">
+					<a  href="https://www.facebook.com/events/1353026981520746/">
+						<img  src="img/Events/Halloween Bash.jpg" class="image1" alt="event poster 1" style= width:100% >  
+					</a><br>
+				</div>-->
+			</div>
+			<br>
+		<h3 id = "NextMonth" style="color: white;"></h3><br>
+			<div class="row">
+				<div class="column3">
+					<a  href="https://www.facebook.com/events/798171857305033/">
+						<img  src="img/Events/BoyBandReview.jpg" class="image1" alt="event poster 1" style= width:100% >  
+					</a><br>
+				</div>
+				<div class="column3">
+					<a href="https://www.facebook.com/events/2272511323047137/">
+						<img  src="img/Events/FadedFlannel.png" class="image1" style= "width:100%; ">  
+					</a><br>
+				</div>
+				<div class="column3">
+					<a  href="https://www.facebook.com/events/1011715472523302/">
+						<img  src="img/Events/Soul'd As Is.png" class="image1"  style= "width:100%; " >  
+					</a><br>
+					<!--<p id="text">Coming Soon</p>-->
+				</div>
+				<!--<div class="column4">
+					<a  href="">
+						<img  src="" class="image1"  style= "width:100%; display:none" >  
+					</a><br>
+					<p id="text">Coming Soon</p>
+				</div>-->
+			</div>
+		
+			<h3 id= "NextMonth2" style="color: white;"></h3><br>
+			<div class="row">
+				<div class="column4">
+					<a  href="https://www.facebook.com/events/434150790557446/">
+						<img  src="img/Events/Six To Midnight.jpg" class="image1" alt="event poster 1" style= "width:100%; display: none;"> 
+					</a><br>
+					<p id="text" style="height: 500px;">Coming Soon</p>
+				</div>
+				<div class="column4">
+					<a href="">
+						<img  src="" class="image1" style= "width:100%; display:none" >  
+					</a><br>
+					<p id="text">Coming Soon</p>
+				</div>
+				<div class="column4">
+					<a  href="">
+						<img  src="" class="image1"  style= "width:100%; display:none;" >  
+					</a><br>
+					<p id="text">Coming Soon</p>
+				</div>
+				<div class="column4">
+					<a  href="">
+						<img  src="" class="image1"  style= "width:100%; display:none" >  
+					</a><br>
+					<p id="text">Coming Soon</p>
+				</div>
+			</div>
+		<script>
+		var month = new Array();
+  		month[0] = "January";
+ 		month[1] = "February";
+ 		month[2] = "March";
+  		month[3] = "April";
+  		month[4] = "May";
+  		month[5] = "June";
+  		month[6] = "July";
+  		month[7] = "August";
+	  	month[8] = "September";
+		month[9] = "October";
+  		month[10] = "November";
+  		month[11] = "December";
+
+  		var d = new Date();
+		var n = month[d.getMonth()];
+		n1 = "Next Month";
+		n2 = "Following Month";
+		//dicument.getElementById("test").innerHTML
+		document.getElementById("Month").innerHTML = n;
+		document.getElementById("NextMonth").innerHTML = n1;
+		document.getElementById("NextMonth2").innerHTML = n2; 	
+		  
+		
+		
+		</script>
+	</div>
+	<footer id="footer">
+			<div class="row">
+				<div class="column">
+					<p>Monday & Tuesday: <br>11am - 11pm<br>Wednesday & Thursday:<br>11am - 12am<br>Friday & Saturday:<br>11am - 1am<br>Sunday:<br>11am - 11pm<br></p>
+					
+				
+					<p><a href="mailto: bannermansbartlett@comcast.net">Email: bannermansbartlett@comcast.net</a></p>
+					<p>Phone Number: (630)947-6841</p>
+					<p><a href ="https://goo.gl/maps/zbJxMj2LVekULFh48">Address: 858 S. Route 59 Bartlett, IL 60103</a></p>
+					<p>
+						<a href="https://www.facebook.com/matt.janczak.9"> <img src="Social Media Icons/PNG/Circle Color/Facebook.png" alt="Bannerman's facebook" style="width: 42px; height:42px; border: 0;"></img></a>
+						<a href=""> <img src="Social Media Icons/PNG/Circle Color/Twitter.png" alt="Bannerman's Twitter" style="width: 42px;" ></img></a>
+						<a href=""><img src="Social Media Icons/PNG/Circle Color/Yelp.png" alt="Bannerman's Yelp" style="width: 42px;" ></img></a> 
+					</p>
+					<a herf="MatthewJanczak.com">Created by Matthew Janczak</a>		
+				</div>
+				<div class="column">
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.1221474698545!2d-88.21100748506806!3d41.97618716725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f00d80079fc73%3A0xb97d631c6e587f80!2sBannerman&#39;s+Sports+Grill!5e0!3m2!1sen!2sus!4v1565588494333!5m2!1sen!2sus" width="250" height="235" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+		</footer>
+		<a class="gototop" href="#"><i class="fas fa-arrow-up"></i></a>
+
+</body>
+<script src="js/navbvar.js"></script>
+</html>

@@ -1,0 +1,69 @@
+/* top of page */
+.header{
+    padding: 0px; /*size */
+    background: black;/*color of background */
+    background-image: url(Picture2.png);/*pic on background */
+    /*hight of img */
+    width:2000px;  
+    height: 100px;
+    /*control the postion & amount & scale */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.active{
+  background-color: #cfc1ab;
+}
+/* NavBar */
+.topnav {
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #cfc1ab;
+}
+
+.topnav a {
+  background-image: url("Background/gray.jpg");
+  float: left;
+  display: block;
+  color: white;
+  width:14.285%;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.topnav a:hover {
+  color: gold;
+}
+
+.topnav a.active1{
+  color: gold;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {   
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsivenav {position: relative;}
+  .topnav.responsivenav .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsivenav a {
+    width:auto;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
